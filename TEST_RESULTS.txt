@@ -1,0 +1,51 @@
+================================================================================
+TOUCAN PAYMENTS ENGINEERING CHALLENGE - TEST EXECUTION RESULTS
+================================================================================
+
+Date/Time of Execution: 2026-08-30 16:51:47 IST
+Maven Test Command: mvnw.cmd clean test
+Operating System: Windows
+Java Version: 17.0.11
+Spring Boot Version: 3.5.5
+
+--------------------------------------------------------------------------------
+TEST SUITE BREAKDOWN
+--------------------------------------------------------------------------------
+
+1. com.example.transactionstarter.controller.TransactionControllerTest
+   - testCreateTransaction_Success                         [PASS]
+   - testCreateTransaction_ValidationFailure               [PASS]
+   - testCreateTransaction_DuplicateId                     [PASS]
+   - testGetTransaction_NotFound                           [PASS]
+   - testGetTransaction_Success                            [PASS]
+   - testUpdateTransactionStatus_Success                   [PASS]
+   - testUpdateTransactionStatus_InvalidTransition         [PASS]
+   - testUpdateTransactionStatus_NotFound                  [PASS]
+   - testGetCustomerTransactions_Success                   [PASS]
+   - testGetCustomerTransactions_EmptyList                 [PASS]
+   Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+
+2. com.example.transactionstarter.service.TransactionServiceTest
+   - testCreateTransaction_Success                         [PASS]
+   - testCreateTransaction_DuplicateId_ThrowsException     [PASS]
+   - testGetTransactionById_Success                        [PASS]
+   - testGetTransactionById_NotFound_ThrowsException       [PASS]
+   - testUpdateTransactionStatus_PendingToFailed_Success   [PASS]
+   - testUpdateTransactionStatus_FailedToCompleted_ThrowsException [PASS]
+   - testGetTransactionsByCustomerId_Empty                 [PASS]
+   Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+3. com.example.transactionstarter.TransactionStarterApplicationTests
+   - contextLoads                                          [PASS]
+   Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+Total Tests Run: 18
+Failures: 0
+Errors: 0
+Skipped: 0
+Build Result: BUILD SUCCESS
+Total Time: 18.665 s
+================================================================================
